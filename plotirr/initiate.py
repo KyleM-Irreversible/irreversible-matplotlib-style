@@ -10,24 +10,24 @@ def rainbow():
     rainbow_cycler = cycler(color=['red','orange','yellow','green','blue','magenta','purple', 'violet', 'darkblue','cyan'])
     plt.rc('axes', prop_cycle=rainbow_cycler)
 
-def blue():
-    blue_cycler= cycler(color=['00aeef','1c2b39','0075bc','72808a','67cdf2','003262'])
-    plt.rc('axes', prop_cycle=blue_cycler)
+def fucsia():
+    fucsia_cycler= cycler(color=['00aeef','1c2b39','0075bc','72808a','67cdf2','003262'])
+    plt.rc('axes', prop_cycle=fuscia_cycler)
 
-blues = blue
-default = blue
-qbit = blue
-
+purple = fucsia
+default = fucsia
+irreversible = fucsia
+magenta = fucsia
 
 here=os.path.abspath(__file__).replace("initiate.py","")
 
 #If we could distribute the font, then this would use it, but we cannot distribute it, so
 #these following three lines don't actually do anything.
-font_files = font_manager.findSystemFonts(fontpaths=[os.path.join(here, "./Brandon_Text")])
+font_files = font_manager.findSystemFonts(fontpaths=[os.path.join(here, "./Avenir")])
 for font_file in font_files:
     font_manager.fontManager.addfont(font_file)
 
-plt.style.use(os.path.join(here, '1qbit.mplstyle'))
+plt.style.use(os.path.join(here, 'irreversible.mplstyle'))
 
 #override the harsh RGB colors with more aesthetic ones:
 newc = dict(
@@ -52,12 +52,12 @@ for key in newc.keys():
 
 
 #Add a better "flag" colormap:
-flag5 = matplotlib.colors.LinearSegmentedColormap.from_list("", ["white", "blue", "C4"]*5 )
-flag10 = matplotlib.colors.LinearSegmentedColormap.from_list("", ["white", "blue", "C4"]*10 )
-flag25 = matplotlib.colors.LinearSegmentedColormap.from_list("", ["white", "blue", "C4"]*25 )
-plt.register_cmap('1qbit25', flag25)
-plt.register_cmap('1qbit10', flag10)
-plt.register_cmap('1qbit5', flag5)
+#flag5 = matplotlib.colors.LinearSegmentedColormap.from_list("", ["white", "blue", "C4"]*5 )
+#flag10 = matplotlib.colors.LinearSegmentedColormap.from_list("", ["white", "blue", "C4"]*10 )
+#flag25 = matplotlib.colors.LinearSegmentedColormap.from_list("", ["white", "blue", "C4"]*25 )
+#plt.register_cmap('1qbit25', flag25)
+#plt.register_cmap('1qbit10', flag10)
+#plt.register_cmap('1qbit5', flag5)
 
 
 
