@@ -1,5 +1,5 @@
-# 1qbit-matplotlib-style
-Matplotlib style file following [1QBit](http://www.1qbit.com)'s brand policies.
+# Irreversible-matplotlib-style
+Matplotlib style file following [Irreversible Inc.](http://www.irreversible.tech)'s brand policies.
 
 _Note that this is probably not complete.  There are plot types that are not accounted for.  Please feel free to make a pull request with updates._
 
@@ -7,31 +7,30 @@ _Note that this is probably not complete.  There are plot types that are not acc
 ## Use:
 Install this package, e.g. 
 ```bash
-pip install plot1qbit
+pip install plotirreversible
 ```
 
-Import the `plot1qbit` package prior to plotting, but after importing matplotlib.
+Import the `plotirr` package prior to plotting, but after importing matplotlib.
 
 ```python
 import matplotlib.pyplot as plt
-import plot1qbit
+import plotirr
 ```
 
 
 ### Font
 
-1QBit's brand font is Brandon Text.  This is a commercial font and thus cannot be distributed.  If you have Brandon Text installed on your computer through some other means, this package will pick it up and use it.  You may need to delete your matplotlib cache first though:
+Irreversible's brand font is Avenir.  This is a commercial font and thus cannot be distributed.  If you have Avenir installed on your computer through some other means, this package will pick it up and use it.  You may need to delete your matplotlib cache first though:
 ```bash 
 rm -r $HOME/.cache/matplotlib
 ```
-If you're an employee of 1QBit, a zip file containing these fonts can be found in the company Google Drive.
-
-To install fonts on Ubuntu (e.g. for plotting with a Jupyter notebook running on Google Cloud), place the otf font files in `$HOME/.local/share/fonts` and then run
+To install fonts on Ubuntu (e.g. for plotting with a Jupyter notebook running on Google Cloud), place the otf/ttf font file(s) in `$HOME/.local/share/fonts` and then run
 
 ```bash
 fc-cache -f -v
+rm -r $HOME/.cache/matplotlib
 ```
-to rebuild the font cache.
+to rebuild the font cache and force matplotlib to rebuild its internal cache next time it's needed.
 
 
 ## Examples
@@ -41,9 +40,8 @@ Below are several examples
 ```python
 import numpy as np
 import matplotlib.pyplot as plt 
-import plot1qbit
+import plotirr
 ```
-
 
 
 ```python
@@ -66,7 +64,7 @@ fig.show()
 
 
     
-![png](output_2_0.png)
+![png](README_files/README_3_0.png)
     
 
 
@@ -91,7 +89,7 @@ fig.show()
 
 
     
-![png](output_3_0.png)
+![png](README_files/README_4_0.png)
     
 
 
@@ -114,7 +112,7 @@ fig.show()
 
 
     
-![png](output_4_0.png)
+![png](README_files/README_5_0.png)
     
 
 
@@ -141,7 +139,7 @@ fig.show()
 
 
     
-![png](output_5_0.png)
+![png](README_files/README_6_0.png)
     
 
 
@@ -164,7 +162,7 @@ fig.show()
 
 
     
-![png](output_6_0.png)
+![png](README_files/README_7_0.png)
     
 
 
@@ -204,7 +202,7 @@ fig.show()
 
 
     
-![png](output_7_0.png)
+![png](README_files/README_8_0.png)
     
 
 
