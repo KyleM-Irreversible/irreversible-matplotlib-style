@@ -1,1 +1,1 @@
-from plot1qbit.report_maker.output import *
+from plotirr.report_maker.output import *

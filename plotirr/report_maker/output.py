@@ -6,7 +6,7 @@ import base64
 import datetime
 import matplotlib.pyplot as plt
 
-from plot1qbit.initiate import newc
+from plotirr.initiate import newc
 
 import logging
 import os
