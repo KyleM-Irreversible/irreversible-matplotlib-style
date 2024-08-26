@@ -7,17 +7,17 @@ from cycler import cycler
 
 
 def rainbow():
-    rainbow_cycler = cycler(color=['red','orange','yellow','green','blue','magenta','purple', 'violet', 'darkblue','cyan'])
+    rainbow_cycler = cycler(color=['red','orange','green','blue','magenta','purple', 'violet', 'darkblue','cyan'])
     plt.rc('axes', prop_cycle=rainbow_cycler)
 
-def fucsia():
-    fucsia_cycler= cycler(color=['00aeef','1c2b39','0075bc','72808a','67cdf2','003262'])
-    plt.rc('axes', prop_cycle=fuscia_cycler)
+def fuchsia():
+    fuchsia_cycler= cycler(color=['00aeef','1c2b39','0075bc','72808a','67cdf2','003262'])
+    plt.rc('axes', prop_cycle=fuchsia_cycler)
 
-purple = fucsia
-default = fucsia
-irreversible = fucsia
-magenta = fucsia
+purple = fuchsia
+default = fuchsia
+irreversible = fuchsia
+magenta = fuchsia
 
 here=os.path.abspath(__file__).replace("initiate.py","")
 
